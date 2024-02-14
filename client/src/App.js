@@ -1,8 +1,7 @@
 import React from "react";
-
 import './App.css';
 import Navbar from './more/Navbar';
-import Content from './more/Content';
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   const [data, setData] = React.useState(null);
@@ -16,7 +15,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Content />
       <header className="App-header">
        
          

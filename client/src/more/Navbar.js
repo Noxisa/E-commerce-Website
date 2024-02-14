@@ -1,40 +1,23 @@
-import React, { useEffect } from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import './navbar.css';
 
-const Navbar = () => {
-    const [scrolled,setScrolled] = React.useState(false);
-const handleScroll = () =>{
-    const offset = Window.scrollY;
-    if(offset > 200){
-        setScrolled(true);
-    }
-    else{
-        setScrolled(false);
-    }
+function Navbars() {
+  return (
+
+      <Navbar bg="dark" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="#home">Logo</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">About</Nav.Link>
+            <Nav.Link href="#logo">Login</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+
+  );
 }
-
-useEffect(() =>{
-    window.addEventListener('scroll',handleScroll)
-})
-let navbarClasses = ['navbar'];
-if(scrolled){
-    navbarClasses.push('scrolled');
-}
-    return (
-        <header className={navbarClasses.join(" ")}>
-
-      
-        <nav className="navigation">
-        <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/">About</a></li>
-        <li><a href="/">Services</a></li>
-        <li><a href="/">Contact</a></li>
-      </ul>
-        </nav>
-
-    </header>
-    );
-  };
-  
-  export default Navbar;
+export default Navbars;
