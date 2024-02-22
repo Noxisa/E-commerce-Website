@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
-import Navbar from './more/Navbar';
 import { BrowserRouter } from "react-router-dom";
+import Navbar from "./more/Navbar";
 
 function App() {
   const [data, setData] = React.useState(null);
