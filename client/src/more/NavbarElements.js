@@ -29,7 +29,7 @@ cursor: pointer;
 }
 `;
 
-export const Bars = styled(Bars)`
+export const StyledBars = styled.div`
   display: none;
   color: #fff;
 
