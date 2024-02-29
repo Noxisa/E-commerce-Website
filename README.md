@@ -23,14 +23,14 @@ The backend of the E-Commerce Website is powered by Node.js, a JavaScript runtim
 * Scalability: Design the backend with scalability in mind to handle a growing number of users and transactions.
 
 ### Additional Features:
-Search and Filters: Implement search functionality and filtering options to help users find specific products.
-Reviews and Ratings: Allow users to leave reviews and ratings for products.
-Admin Panel: Create an admin panel for managing products, user accounts, and order processing.
+* Search and Filters: Implement search functionality and filtering options to help users find specific products.
+* Reviews and Ratings: Allow users to leave reviews and ratings for products.
+* Admin Panel: Create an admin panel for managing products, user accounts, and order processing.
 
 ### Development Tools:
-Version Control: Use Git for version control to manage code changes efficiently.
-Dependency Management: Utilize npm or Yarn for managing project dependencies.
+* Version Control: Use Git for version control to manage code changes efficiently.
+* Dependency Management: Utilize npm or Yarn for managing project dependencies.
 
 ### Testing and Deployment:
-Unit and Integration Testing: Implement testing strategies for both frontend and backend components.
-Continuous Integration/Continuous Deployment (CI/CD): Set up CI/CD pipelines for automated testing and deployment.
+* Unit and Integration Testing: Implement testing strategies for both frontend and backend components.
+* Continuous Integration/Continuous Deployment (CI/CD): Set up CI/CD pipelines for automated testing and deployment.
