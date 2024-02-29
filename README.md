@@ -29,6 +29,6 @@ Admin Panel: Create an admin panel for managing products, user accounts, and ord
 Version Control: Use Git for version control to manage code changes efficiently.
 Dependency Management: Utilize npm or Yarn for managing project dependencies.
 
-# Testing and Deployment:
+### Testing and Deployment:
 Unit and Integration Testing: Implement testing strategies for both frontend and backend components.
 Continuous Integration/Continuous Deployment (CI/CD): Set up CI/CD pipelines for automated testing and deployment.
