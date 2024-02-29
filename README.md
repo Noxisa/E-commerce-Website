@@ -13,8 +13,9 @@ Shopping Cart: Implement a shopping cart system for users to add and manage thei
 User Authentication: Enable user registration, login, and logout functionalities.
 Responsive Design: Ensure a responsive design that adapts to different screen sizes for a seamless experience on both desktop and mobile devices.
 Backend (Node.js):
-The backend of the E-Commerce Website is powered by Node.js, a JavaScript runtime for building server-side applications. Key backend features include:
+The backend of the E-Commerce Website is powered by Node.js, a JavaScript runtime for building server-side applications. 
 
+### Key backend features include:
 RESTful APIs: Implement a set of RESTful APIs to handle CRUD (Create, Read, Update, Delete) operations for products, users, and orders.
 Database Integration: Utilize a database (such  MySQL, or PostgreSQL) to store and manage product information, user data, and order details.
 Order Processing: Manage the order fulfillment process, including order creation, payment processing integration, and order status updates.
