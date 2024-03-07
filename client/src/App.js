@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Navbar from './more/Navbar';
+import Navbar from './more/Navbar/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages';
 import About from './pages/about';
@@ -31,7 +31,7 @@ function App() {
         </Routes>
       </Router>
       
-      <div className="App">
+      <div>
         <header className="App-header">
           <p>{data !== null ? data : "Loading..."}</p>
         </header>
