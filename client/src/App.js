@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import Navbar from './more/Navbar/Navbar';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, BrowserRouter} from 'react-router-dom';
 import Home from './pages';
 import About from './pages/about';
-import Services from './pages/services';
+import Products from './pages/products';
 import Contact from './pages/contact';
 import SignUp from './pages/signup';
+import Card from './pages/card';
 
 function App() {
   const [data, setData] = useState(null);
@@ -20,17 +21,18 @@ function App() {
 
   return ( 
     <>
-      <Router>
+    <BrowserRouter>
         <Navbar />
-        <Routes>
+      <Router>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/services' element={<Services />} />
-          <Route path='/contact-us' element={<Contact />} />
-          <Route path='/sign-up' element={<SignUp />} />
-        </Routes>
+          <Route path='/products' element={<Products />} />
+          <Route path='/contact' element={<Contact />} />`
+          
+      <Route path='/card' element={<Card />}/>
+        <Route path='/sign-up' element={<SignUp />} />
       </Router>
-      
+      </BrowserRouter>
       <div>
         <header className="App-header">
           <p>{data !== null ? data : "Loading..."}</p>
