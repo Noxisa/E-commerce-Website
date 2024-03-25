@@ -3,7 +3,7 @@
     background: linear-gradient(180deg, #fde1fd, #e1ffe1 60%);
     display: flex;
     align-items: center;
-    font-size: 27px;
+    font-size: 47px;
 }
 
 .baner-left{
@@ -32,11 +32,11 @@
 .banner-hand-icon{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 .banner-hand-icon img{
-    width: 105px;
-    margin-right: 100px;
+    width: 110px;
+    margin-right: 110px;
 }
 
 .banner-latest-btn{
@@ -60,5 +60,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 1.2;
     
 }
