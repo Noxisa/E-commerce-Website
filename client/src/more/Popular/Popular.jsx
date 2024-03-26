@@ -10,7 +10,7 @@ return (
         <hr />
         <div className='popular-item'>
             {data_product.map((item,i)=>{
-               <Item
+               return <Item
             key={i}
             id={item.id}
             name={item.name}
