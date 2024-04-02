@@ -1,4 +1,4 @@
-.newsletter{
+.newslatter{
     width: 65%;
     height: 40vh;
     display: flex;
@@ -12,19 +12,19 @@
     gap: 30px;
 }
 
-.newsletter h1{
+.newslatter h1{
     color: #454544;
     font-size: 55px;
     font-weight: 600;
 
 }
 
-.newsletter p{
+.newslatter p{
     color: #454544;
     font-size: 20px;
 }
 
-.newsletter div{
+.newslatter div{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,7 +35,7 @@
     border: 1px solid #e3e3e3;
 }
 
-.newsletter input{
+.newslatter input{
     width: 500px;
     margin-left: 30px;
     border: none;
@@ -45,7 +45,7 @@
     font-size: 16px;
 }
 
-.newsletter div button{
+.newslatter div button{
     width: 210px;
     height: 70px;
     border-radius: 80px;

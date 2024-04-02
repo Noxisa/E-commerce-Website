@@ -8,6 +8,7 @@ import Products from './pages/products';
 import Contact from './pages/contact';
 import SignUp from './pages/signup';
 import Card from './pages/card';
+import Footer from './more/Footer/Footer';
 
 function App() {
   const [data, setData] = useState(null);
@@ -35,6 +36,7 @@ function App() {
           <Route path='/card' element={<Card />} />
           <Route path='/sign-up' element={<SignUp />} />
         </Routes>
+        <Footer />
       </Router>
 
       <div>
