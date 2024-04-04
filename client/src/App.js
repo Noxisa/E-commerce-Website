@@ -10,6 +10,7 @@ import SignUp from './pages/signup';
 import Card from './pages/card';
 import Footer from './more/Footer/Footer';
 
+
 function App() {
   const [data, setData] = useState(null);
   useEffect(() => {
