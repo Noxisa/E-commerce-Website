@@ -1,5 +1,4 @@
-import React, { createContext } from 'react';
-import './ShopContext.css';
+import React, { createContext, props } from 'react';
 import all_products from '../more/assets/all_product';
 
 export const ShopContext = createContext(null);
