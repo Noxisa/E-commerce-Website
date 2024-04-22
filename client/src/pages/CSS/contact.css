@@ -1,0 +1,49 @@
+.contact-section {
+    padding: 50px 0; 
+    background-color: #f8f9fd; 
+  }
+  
+  .contact-container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+  }
+  
+  .contact-container h2 {
+    color: #333; 
+    font-size: 32px; 
+    margin-bottom: 20px; 
+  }
+  
+  .contact-container p {
+    color: #666; 
+    font-size: 18px; 
+    line-height: 1.6; 
+  }
+  
+  .contact-info {
+    margin-bottom: 20px; 
+  }
+  
+  .opening-hours {
+    margin-top: 30px; 
+  }
+  
+  .opening-hours h3 {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+  }
+  
+  table {
+    width: 100%; 
+    border-collapse: collapse; 
+  }
+  
+  table td {
+    padding: 8px 0; 
+    border-bottom: 1px solid #ddd; 
+  }
+  
+  table td:first-child {
+    font-weight: bold;
+  }
