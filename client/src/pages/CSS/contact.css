@@ -1,6 +1,7 @@
 .contact-section {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     padding: 50px 0; 
-    background-color: #f8f9fd; 
+    background: linear-gradient(to bottom, #9370db, #ffffff);
   }
   
   .contact-container {
@@ -10,13 +11,13 @@
   }
   
   .contact-container h2 {
-    color: #333; 
+    color: #000000; 
     font-size: 32px; 
     margin-bottom: 20px; 
   }
   
   .contact-container p {
-    color: #666; 
+    color: #000000; 
     font-size: 18px; 
     line-height: 1.6; 
   }
@@ -35,13 +36,13 @@
   }
   
   table {
-    width: 100%; 
+    width: 40%; 
     border-collapse: collapse; 
   }
   
   table td {
     padding: 8px 0; 
-    border-bottom: 1px solid #ddd; 
+    border-bottom: 1px solid #747474; 
   }
   
   table td:first-child {

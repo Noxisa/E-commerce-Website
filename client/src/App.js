@@ -9,6 +9,7 @@ import Contact from './pages/contact';
 import SignUp from './pages/signup';
 import Card from './pages/card';
 import Footer from './more/Footer/Footer';
+import Registration from './pages/registration';
 
 
 function App() {
@@ -32,10 +33,12 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
-          <Route path='/products/mens'  element={<Products />} />
+          <Route path='/products'  element={<Products />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/card' element={<Card />} />
-          <Route path='/sign-up' element={<SignUp />} />
+          <Route path='/signup' element={<SignUp />} />
+          <Route path='/registration' element={<Registration />} />
+
         </Routes>
         <Footer />
       </Router>

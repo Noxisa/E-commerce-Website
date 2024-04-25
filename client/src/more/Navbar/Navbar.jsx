@@ -6,11 +6,9 @@ import cart_icon from '../assets/cart_icon.png';
 
 const Navbar = () => {
     const [menu, setMenu] = useState('home');
-    const [showDropdown, setShowDropdown] = useState(false);
+    
 
-    const toggleDropdown = () => {
-        setShowDropdown(!showDropdown);
-    };
+    
 
     return (
         <div className='navbar'>
@@ -23,18 +21,7 @@ const Navbar = () => {
                     {menu === 'home' ? <hr /> : <></>}
                 </li>
                 <li onClick={() => { setMenu('products') }}>
-                    <div className='dropdown-wrapper'>
-                        <div className='dropdown-header' onClick={toggleDropdown}>
-                            Products
-                            <span className={`dropdown-icon ${showDropdown ? 'open' : ''}`}>&#9662;</span>
-                        </div>
-                        {showDropdown && (
-                            <div className='dropdown-content'>
-                                <Link to='/products/mens'>Men's</Link>
-                                <Link to='/products/womens'>Women's</Link>
-                            </div>
-                        )}
-                    </div>
+                    <Link style={{ textDecoration: 'none' }} to='/products'>Products</Link>
                     {menu === 'products' ? <hr /> : <></>}
                 </li>
                 <li onClick={() => { setMenu('about') }}>

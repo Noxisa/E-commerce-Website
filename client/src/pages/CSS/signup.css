@@ -1,37 +1,38 @@
 .app {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    height: 100vh;
-    background-color: #f8f9fd;
-  }
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #9370db, #ffffff);
+}
+
   
   input[type="text"],
   input[type="password"] {
-    height: 72px; 
+    height: 30px; 
     width: 100%;
-    padding-left: 20px;
+    padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     outline: none;
     color: #5c5c5c;
-    font-size: 18px;
+    font-size: 16px;
   }
   
   input[type="submit"] {
     margin-top: 10px;
     cursor: pointer;
     font-size: 15px;
-    background: #01d28e;
-    border: 1px solid #01d28e;
+    background: #9370db;
+    border: 1px solid #9370db;
     color: #fff;
     padding: 10px 20px;
   }
   
   input[type="submit"]:hover {
-    background: #6cf0c2;
+    background: #603fa1;
   }
   
   .button-container {
@@ -58,7 +59,7 @@
   .input-container {
     display: flex;
     flex-direction: column;
-    gap: 29px;
+    gap: 20px;
     margin-top: 30px;
   }
   
