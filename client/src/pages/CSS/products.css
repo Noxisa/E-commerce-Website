@@ -1,10 +1,13 @@
-.shop-products{
+.shop-products {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     background: linear-gradient(to bottom, #9370db, #ffffff);
+    padding: 20px; 
 }
+
 .products-indexSort {
     display: flex;
-    margin: 0px 10px;
+    margin: 0px auto; 
+    max-width: 1200px; 
     justify-content: space-between;
     align-items: center;
 }
@@ -16,28 +19,28 @@
 }
 
 .products-indexSort p span {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .products {
-    margin: 20px 170px;
+    margin: 30px auto; 
+    max-width: 1000px; 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 80px;
-    
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
 }
 
 .products-loadmore {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 150px auto;
-    width: 233px;
-    height: 69px;
-    border-radius: 75px;
+    margin: 50px auto; 
+    width: 200px; 
+    height: 50px; 
+    border-radius: 25px; 
     background: #9370db;
-    color: #000000;
-    font-size: 18px;
+    color: #ffffff; 
+    font-size: 16px; 
     font-weight: 500;
 }
 
@@ -53,7 +56,7 @@
 }
 
 .product-item img {
-    width: 100%;
+    width: 110%;
     height: auto;
     display: block;
     transition: transform 0.3s ease;
@@ -65,4 +68,16 @@
 
 .product-item.hovered {
     background: linear-gradient(to bottom, #9370db, #ffffff);
+}
+
+@media screen and (max-width: 768px) {
+    .products {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    }
+
+    .products-loadmore {
+        width: 150px; 
+        height: 40px; 
+        font-size: 14px; 
+    }
 }

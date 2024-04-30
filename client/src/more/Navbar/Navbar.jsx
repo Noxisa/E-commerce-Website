@@ -6,15 +6,32 @@ import cart_icon from '../assets/cart_icon.png';
 
 const Navbar = () => {
     const [menu, setMenu] = useState('home');
-    
+    const [searchQuery, setSearchQuery] = useState('');
 
-    
+    const handleSearchChange = (e) => {
+        setSearchQuery(e.target.value);
+    };
+
+    const handleSearchSubmit = (e) => {
+        e.preventDefault();
+        // Tutaj możesz umieścić kod do obsługi wyszukiwania, np. przekierowanie do strony z wynikami wyszukiwania
+        console.log("Wyszukaj: ", searchQuery);
+    };
 
     return (
         <div className='navbar'>
             <div className='nav-logo'>
                 <p>Shop.com</p>
             </div>
+            <form onSubmit={handleSearchSubmit} className="search-form">
+                <input
+                    type="text"
+                    placeholder="Search..."
+                    value={searchQuery}
+                    onChange={handleSearchChange}
+                />
+                <button type="submit">Search</button>
+            </form>
             <ul className='nav-menu'>
                 <li onClick={() => { setMenu('home') }}>
                     <Link style={{ textDecoration: 'none' }} to='/'>Home</Link>
