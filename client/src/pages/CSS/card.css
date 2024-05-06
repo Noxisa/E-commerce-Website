@@ -1,0 +1,83 @@
+.card-container {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    background: linear-gradient(to bottom, #9370db, #ffffff);
+    padding: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.card-container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #5c5c5c;
+}
+
+.card-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-container ul li {
+    margin-bottom: 10px;
+}
+
+.card-container button {
+    padding: 10px 20px;
+    border: 1px solid #9370db;
+    border-radius: 5px;
+    background-color: #9370db;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.card-container button:hover {
+    background-color: #603fa1;
+}
+
+.card-container input[type="text"] {
+    height: 30px; 
+    width: calc(100% - 20px); 
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    color: #5c5c5c;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.card-container input[type="text"]:focus {
+    border-color: #9370db;
+}
+
+.product {
+    margin-bottom: 20px;
+}
+
+.product button {
+    background-color: #4caf50;
+    margin-right: 0; 
+}
+
+.product button:hover {
+    background-color: #45a049;
+}
+
+.loginsignup-login span {
+    color: #9370db;
+    font-weight: 600;
+}
+
+.loginsignup-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+    color: #5c5c5c;
+    font-size: 18px;
+    font-weight: 500;
+}
