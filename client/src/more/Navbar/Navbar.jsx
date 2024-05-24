@@ -14,7 +14,6 @@ const Navbar = () => {
 
     const handleSearchSubmit = (e) => {
         e.preventDefault();
-        // Tutaj możesz umieścić kod do obsługi wyszukiwania, np. przekierowanie do strony z wynikami wyszukiwania
         console.log("Wyszukaj: ", searchQuery);
     };
 

@@ -11,6 +11,11 @@ const ProductsDisplay = ({ products }) => {
         setSelectedProduct(product);
         setModalIsOpen(true);
     };
+    const addToCart = (product) => {
+        const quantity = parseInt(document.getElementById("quantityInput").value);
+        console.log(`Dodano ${quantity} sztuk ${product.name} do koszyka.`);
+        closeModal();
+    };
 
     const closeModal = () => {
         setModalIsOpen(false);
@@ -44,8 +49,13 @@ const ProductsDisplay = ({ products }) => {
                         <p>New Price: {selectedProduct.new_price}</p>
                         <p>Old Price: {selectedProduct.old_price}</p>
                         {/* Dodaj opis produktu */}
-                        {/* Dodaj pole do wprowadzania ilości produktu */}
-                        {/* Dodaj przycisk do dodawania do koszyka */}
+<p>{selectedProduct.description}</p>
+
+{/* Dodaj pole do wprowadzania ilości produktu */}
+<input type="number" min="1" defaultValue="1" />
+
+{/* Dodaj przycisk do dodawania do koszyka */}
+<button onClick={() => addToCart(selectedProduct)}>Add to Cart</button>
                         <button onClick={closeModal}>Close Modal</button>
                     </div>
                 )}
